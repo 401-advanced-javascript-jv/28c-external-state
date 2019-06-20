@@ -8,19 +8,20 @@ export default class Form extends React.Component {
 
   submitHandler = (event) => {
     event.preventDefault();
-    console.log(this.props);
-    this.props.updateName(event.target.name);
+    this.props.updateName(this.state.name);
   };
 
   updateState = (event) => {
-    const name = event.target.name;
-    this.setState({name});
+    const property = event.target.name;
+    const value = event.target.value;
+    this.setState({ [property]: value });
   };
 
   render() {
     return (
       <form onSubmit={this.submitHandler}>
         <input type="text" onChange={this.updateState} name="name" />
+        <button>Submit</button>
       </form>
     );
   }

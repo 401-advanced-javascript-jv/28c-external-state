@@ -23,7 +23,7 @@ class App extends React.Component {
       <React.Fragment>
         <div>Name: {this.state.name}</div>
         <div># of Updates: {this.state.count}</div>
-        <Form changeHandler={this.updateName}/>
+        <Form updateName={this.updateName}/>
       </React.Fragment>
     );
   }
