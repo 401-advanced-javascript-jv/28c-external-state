@@ -10,11 +10,13 @@
 
 - [PR - GitHub](https://github.com/401-advanced-javascript-jv/28a-props/pull/1)
 - [Travis ![Build Status](https://travis-ci.com/401-advanced-javascript-jv/28c-external-state.svg?branch=submission)](https://travis-ci.com/401-advanced-javascript-jv/28c-external-state)
+- [Front-End Deployment](https://jovial-goldwasser-b4c233.netlify.com/)
 
 **Assignment 2, Challenge 2**
 
 - [PR - GitHub](https://github.com/401-advanced-javascript-jv/28a-props/pull/2)
 - [Travis ![Build Status](https://travis-ci.com/401-advanced-javascript-jv/28c-external-state.svg?branch=submission2)](https://travis-ci.com/401-advanced-javascript-jv/28c-external-state)
+- [Front-End Deployment](https://flamboyant-lichterman-af9802.netlify.com/)
 
 #### Running the app
 
