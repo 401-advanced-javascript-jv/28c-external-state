@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Form from './components/form/form';
+import Display from './components/display/display';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,9 +21,11 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>Name: {this.state.name}</div>
-        <div># of Updates: {this.state.count}</div>
-        <Form updateName={this.updateName}/>
+        <Display
+          name={this.state.name}
+          count={this.state.count}
+          updateName={this.updateName}
+        />
       </React.Fragment>
     );
   }
