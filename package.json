@@ -9,7 +9,18 @@
     "react-dom": "16.3.2",
     "react-scripts": "1.1.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
