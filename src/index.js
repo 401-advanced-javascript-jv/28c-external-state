@@ -27,7 +27,8 @@ class App extends React.Component {
 
   submitHandler = (event) => {
     event.preventDefault();
-    this.updateName(event.target.nameInput.value);
+    const nameInput = event.target.nameInput.value;
+    this.updateName(nameInput);
   };
 
   render() {
