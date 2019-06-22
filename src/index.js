@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Display from './components/display/display';
 import Form from './components/form/form';
 
 class App extends React.Component {
@@ -18,12 +19,30 @@ class App extends React.Component {
     });
   };
 
+  updateState = (event) => {
+    const property = event.target.name;
+    const value = event.target.value;
+    this.setState({ [property]: value });
+  };
+
+  submitHandler = (event) => {
+    event.preventDefault();
+    const nameInput = event.target.nameInput.value;
+    this.updateName(nameInput);
+  };
+
   render() {
     return (
       <React.Fragment>
-        <div>Name: {this.state.name}</div>
-        <div># of Updates: {this.state.count}</div>
-        <Form updateName={this.updateName}/>
+        <Display
+          name={this.state.name}
+          count={this.state.count}
+        />
+        <Form
+          updateName={this.updateName}
+          updateState={this.updateState}
+          submitHandler={this.submitHandler}
+        />
       </React.Fragment>
     );
   }
